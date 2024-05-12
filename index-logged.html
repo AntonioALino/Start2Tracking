@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start2Track</title>
+    <link rel="stylesheet" href="/assets/css/globals/main.css">
+    <link rel="stylesheet" href="assets/css/globals/header.css">
+    <link rel="stylesheet" href="assets/css/globals/footer.css">    
+</head>
+
+<body>
+    <div class="main">
+        <header>
+            <div class="header-left">
+                <h1><a href="index.html">
+                    Start2Track
+                </a></h1>
+            </div>
+            <div class="header-right">
+                <div class="login-btn">
+                    <h2><a href="login.html">
+                        Login
+                    </a></h2>
+                </div>
+                <div class="reg-btn">
+                    <h2><a href="reg.html">
+                        Cadastro
+                    </a></h2>
+                </div>
+            </div>    
+        </header>
+
+        <div class="content">
+            
+            <div class="system-container">
+                <h1>Vamos começar a encontrar oportunidades!</h1>
+                <h2>Insira um CEP para continuar</h2>
+                <label for="sys-input">
+                    <p> CEP:
+                        <input class="cep-input" id="inputCEP" type="text">
+                    </p>
+                </label>
+                <button class="search-btn" onclick="printCEPData()"><p>Buscar</p></button>
+
+                <p id="parInfo"></p>
+            </div>           
+        </div>
+
+        <footer>
+            <div class="footer-left">
+                <h1>Start2Track</h1>
+                <p>start2track@gmail.com</p>
+                <p>(15) 99999-8888</p>
+                <p>Rodovia Raposo Tavares, km 92</p>
+            </div>
+            <div class="footer-right">
+                <h1>Nos acompanhe nas redes sociais!</h1>
+                <div class="socmedia-icons">
+                    <a href="#"><img src="assets/src/icons/facebook-icon.svg"></a>
+                    <a href="#"><img src="assets/src/icons/instagram-icon.svg"></a>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+    <script src="assets/js/fetch.js"></script>
+</body>
+
+</html>
