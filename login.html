@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Start2Track</title>
     <link rel="stylesheet" href="assets/css/globals/main.css">
-    <link rel="stylesheet" href="assets/css/globals/header.css">
-    <link rel="stylesheet" href="assets/css/globals/footer.css">
 </head>
 
 <body>
@@ -18,39 +16,30 @@
                 </a></h1>
             </div>
             <div class="header-right">
-                <div class="login-btn">
-                    <h2><a href="login.html">
-                        Login
-                    </a></h2>
-                </div>
-                <div class="reg-btn">
-                    <h2><a href="reg.html">
-                        Cadastro
-                    </a></h2>
-                </div>
             </div>    
         </header>
 
-        <div class="content">
-            <h1>Iniciar sessão</h1>
-            <p>Preencha com suas informações para efetuar login</p>
+        <div class="content">           
             <div class="auth-frame">
+                <h2>Iniciar sessão</h2>
+                <p>Preencha com suas informações para efetuar login</p>
                 <label for="auth-input">
                     <p>Nome de usuário</p>
                 </label>
-                <input class="auth-input" type="text" placeholder="Insira seu nome de usuário">
+                <input class="auth-input" id="username" type="text" placeholder="Insira seu nome de usuário">
 
                 <label for="auth-input">
                     <p>Senha</p>
                 </label>
-                <input class="auth-input" type="password" placeholder="Insira sua senha">
+                <input class="auth-input" id="password" type="password" placeholder="Insira sua senha">
 
-                <div class="auth-btn">
-                    <a href="">
-                        <h2>Entrar</h2>
-                    </a>              
-                </div>                    
-            </div>   
+                <div class="login-btn">
+                    <button class="blue-btn" onclick="login()"><p>Entrar</p></button> 
+                </div>
+
+               
+            </div>
+                  
         </div>
 
         <footer>
@@ -70,6 +59,7 @@
         </footer>
 
     </main>
+    <script src="assets/js/auth.js"></script>
 </body>
 
 </html>

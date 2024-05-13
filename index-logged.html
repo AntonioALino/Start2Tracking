@@ -4,46 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Start2Track</title>
-    <link rel="stylesheet" href="/assets/css/globals/main.css">
-    <link rel="stylesheet" href="assets/css/globals/header.css">
-    <link rel="stylesheet" href="assets/css/globals/footer.css">    
+    <link rel="stylesheet" href="/assets/css/globals/main.css">  
 </head>
 
 <body>
     <div class="main">
+
         <header>
             <div class="header-left">
                 <h1><a href="index.html">
                     Start2Track
                 </a></h1>
             </div>
-            <div class="header-right">
-                <div class="login-btn">
-                    <h2><a href="login.html">
-                        Login
-                    </a></h2>
-                </div>
-                <div class="reg-btn">
-                    <h2><a href="reg.html">
-                        Cadastro
-                    </a></h2>
-                </div>
-            </div>    
         </header>
 
-        <div class="content">
-            
-            <div class="system-container">
-                <h1>Vamos começar a encontrar oportunidades!</h1>
-                <h2>Insira um CEP para continuar</h2>
-                <label for="sys-input">
+        <div class="content">            
+            <div class="tracker-container">
+                <h2>Vamos começar a encontrar oportunidades!</h2>
+                <p>Insira um CEP para continuar</p>
+                <label for="cep-input">
                     <p> CEP:
                         <input class="cep-input" id="inputCEP" type="text">
                     </p>
                 </label>
-                <button class="search-btn" onclick="printCEPData()"><p>Buscar</p></button>
 
-                <p id="parInfo"></p>
+                <div class="tracker-btns">
+                    <button class="blue-btn" onclick="printCEPData()"><p>Buscar</p></button>
+                    <button class="yellow-btn" id="clearBtn" onclick="clearCEPInput()"><p>Limpar</p></button>
+                    <button class="red-btn" id="cancelBtn" onclick="cancelTrack()""><p>Cancelar</p></button>
+                </div>
+
+                <div class="tracked-info">
+                    <p id="parInfo"></p>
+                    
+                </div>
+                <button class="green-btn" onclick="saveData()"><p>Salvar</p></button>             
             </div>           
         </div>
 
@@ -64,7 +59,7 @@
         </footer>
 
     </main>
-    <script src="assets/js/fetch.js"></script>
+    <script src="assets/js/tracker.js"></script>
 </body>
 
 </html>

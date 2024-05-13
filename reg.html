@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Start2Track</title>
-    <link rel="stylesheet" href="assets/css/globals/main.css">
-    <link rel="stylesheet" href="assets/css/globals/header.css">
-    <link rel="stylesheet" href="assets/css/globals/footer.css">    
+    <link rel="stylesheet" href="assets/css/globals/main.css">   
 </head>
 
 <body>
@@ -18,58 +16,34 @@
                 </a></h1>
             </div>
             <div class="header-right">
-                <div class="login-btn">
-                    <h2><a href="login.html">
-                        Login
-                    </a></h2>
-                </div>
-                <div class="reg-btn">
-                    <h2><a href="reg.html">
-                        Cadastro
-                    </a></h2>
-                </div>
             </div>    
         </header>
 
         <div class="content">
-            <h1>Cadastro</h1>
+            <h2>Cadastro</h2>
             <p>Preencha os campos abaixo para realizar seu cadastro</p>
             <div class="auth-frame">
                 <label for="auth-input">
                     <p>Nome de usuário</p>
                 </label>
-                <input class="auth-input" type="text" placeholder="Insira seu nome de usuário">
+                <input class="auth-input" id="username" type="text" placeholder="Insira seu nome de usuário">
 
                 <label for="auth-input">
                     <p>Senha</p>
                 </label>
-                <input class="auth-input" type="password" placeholder="Insira sua senha">
+                <input class="auth-input" id="password" type="password" placeholder="Insira sua senha">
              
                 <label for="auth-input">
                     <p>Confirme sua senha</p>
                 </label>
-                <input class="auth-input" type="password">
+                <input class="auth-input" id="passwordConfirm" type="password">
 
                 <div class="reg-btns">
-                    <div class="auth-btn">
-                        <a href="">
-                            <h2>Entrar</h2>
-                        </a>
-                    </div>
 
-                    <div class="clear-btn">
-                        <a href="reg.html">
-                            <h2>Limpar</h2>
-                        </a>
-
-                    </div>
-
-                    <div class="rtn-btn">
-                        <a href="">
-                            <h2>Voltar</h2>
-                        </a>
-                    </div>
-                    
+                    <button class="blue-btn" onclick="register()"><p>Cadastrar</p></button>
+                    <button class="blue-btn" onclick="clearInput()"><p>Limpar</p></button>
+                    <button class="blue-btn" onclick="redirect()"><p>Voltar</p></button>
+    
                 </div>
             </div>  
         </div>
@@ -89,8 +63,8 @@
                 </div>
             </div>
         </footer>
-
     </main>
+    <script src="assets/js/register.js"></script>
 </body>
 
 </html>
